@@ -1,0 +1,57 @@
+# need envmgr to do the rest of this...
+alias envmgr="/usr/local/bin/envmgr"
+
+
+eval `envmgr -a PATH /sbin`
+eval `envmgr -a PATH /usr/sbin`
+eval `envmgr -a PATH $HOME/bin`
+
+if [ -d /local/mnt/workspace/bin ] ; then
+        eval `envmgr -a PATH /local/mnt/workspace/bin`
+fi
+if [ -d /usr/local/lib ] ; then
+        eval `envmgr -a LD_LIBRARY_PATH /usr/local/lib`
+fi
+if [ -d /usr/local/bin ] ; then
+        eval `envmgr -a PATH /usr/local/bin`
+fi
+if [ -d /usr/local/sbin ] ; then
+        eval `envmgr -a PATH /usr/local/sbin`
+fi
+if [ -d /local/mnt/workspace/lib ] ; then
+        eval `envmgr -a LD_LIBRARY_PATH /local/mnt/workspace/lib`
+fi
+
+# to get ssl certs working for things like curl, wget, github, pip and so on
+eval `envmgr -s SSL_CERT_DIR ~/.certs`
+[[ -e /etc/ssl/certs/ca-certificates.crt ]] && export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
+## Set default to 644 ##
+umask 022
+
+LANG=en_US
+#LPDEST=
+#PRINTER=$LPDEST
+#EDITOR=/usr/local/bin/vim
+PS1='\h \T \w{\#} '
+PS2='> '
+HISTSIZE=3048
+HISTFILESIZE=100000
+# ignore duplicates
+HISTCONTROL=ignoreboth
+HISTTIMEFORMAT="%y/%m/%d %T "
+
+# When running two bash windows, allow both to write to the history, not one stomping the other
+shopt -s histappend
+
+# Keep multiline commands as one command in history
+shopt -s cmdhist
+
+export LPDEST PRINTER EDITOR HISTSIZE HISTFILESIZE HISTCONTROL HISTTIMEFORMAT
+export GREP_OPTIONS='--color=auto'
+
+# Disable caching of bjobs data
+export LSFBINARY_NOCACHE=1
+
+# aliases in .bashrc
+. ~/.bashrc
