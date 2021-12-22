@@ -53,4 +53,5 @@ alias sysre="sudo systemctl restart"
 alias sysstop="sudo systemctl stop"
 alias jctl="journalctl -ru"
 
-
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
