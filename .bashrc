@@ -45,3 +45,12 @@ alias tree="tree -I RCS"
 alias sbashrc="source ~/.bashrc"
 alias sprofile=". ~/.profile.local"
 
+alias aptupg="sudo apt update && sudo apt upgrade"
+alias aptinst="sudo apt install"
+alias snapinst="sudo snap install"
+alias sysstart="sudo systemctl start"
+alias sysre="sudo systemctl restart"
+alias sysstop="sudo systemctl stop"
+alias jctl="journalctl -ru"
+
+
