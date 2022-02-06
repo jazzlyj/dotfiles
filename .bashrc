@@ -10,6 +10,11 @@ venv() {
 }
 
 
+# sysadmin
+alias addu="sudo adduser"
+alias addsudo="sudo usermod -aG sudo"
+
+
 # Git stuff
 alias ga="git add"
 alias gc="git commit -v"
