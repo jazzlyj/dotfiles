@@ -1,2 +1,2 @@
 # dotfiles
-Unix configuration (dot files)
+Configuration (dot) files
