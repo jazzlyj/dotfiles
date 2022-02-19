@@ -14,5 +14,8 @@ shopt -s cmdhist
 
 export HISTSIZE HISTFILESIZE HISTCONTROL HISTTIMEFORMAT
 
+# start ssh agent in the background
+eval "$(ssh-agent -s)"
+
 # aliases in .bashrc
 . ~/.bash_aliases

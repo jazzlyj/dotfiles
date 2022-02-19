@@ -7,6 +7,7 @@ alias gzd="gzip -d"
 alias dusk="du -sh ."
 alias dfk="du -hk ."
 alias ssh3="ssh -o GlobalKnownHostsFile=/dev/null/"
+alias ssha="ssh-add ~/.ssh/id_ed25519"
 alias h=history
 alias tree="tree -I RCS"
 alias sbashrc="source ~/.bashrc"
