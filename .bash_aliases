@@ -11,6 +11,7 @@ alias h=history
 alias tree="tree -I RCS"
 alias sbashrc="source ~/.bashrc"
 alias sprofile=". ~/.profile.local"
+alias shutd="sudo /sbin/shutdown"
 
 alias aptupg="sudo apt update && sudo apt upgrade"
 alias aptinst="sudo apt install"
@@ -22,6 +23,7 @@ alias jctl="journalctl -ru"
 
 alias addu="sudo adduser"
 alias addsudo="sudo usermod -aG sudo"
+
 
 # Git stuff
 alias ga="git add"
