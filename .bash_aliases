@@ -8,6 +8,7 @@ alias dusk="du -sh ."
 alias dfk="du -hk ."
 alias ssh3="ssh -o GlobalKnownHostsFile=/dev/null/"
 alias ssha="ssh-add ~/.ssh/id_ed25519"
+alias sshm="~/bin/ssh-multi.sh -u jay -d"
 alias h=history
 alias tree="tree -I RCS"
 alias sbashrc="source ~/.bashrc"
