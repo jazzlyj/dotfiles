@@ -13,6 +13,7 @@ alias tree="tree -I RCS"
 alias sbashrc="source ~/.bashrc"
 alias sprofile=". ~/.profile.local"
 alias shutd="sudo /sbin/shutdown"
+alias shutn="sudo shutdown now"
 
 alias aptupg="sudo apt update && sudo apt upgrade"
 alias aptinst="sudo apt install"
