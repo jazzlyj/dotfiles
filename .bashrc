@@ -21,10 +21,10 @@ alias gc="git commit -v"
 alias gpush="git push"
 alias gpull="git pull"
 alias gstat="git status"
-alias gcm="git checkout master"
+alias gcm="git checkout main"
 alias gcj="git checkout jlavine"
 alias gcb="git checkout -b"
-alias gmm="git merge master"
+alias gmm="git merge main"
 alias gba="git branch -avv"
 
 
