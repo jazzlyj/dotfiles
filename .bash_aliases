@@ -46,6 +46,7 @@ alias gcmsg="git commit -m"
 alias gcmsgv="git commit -v"
 alias gcam="git commit --amend"
 alias gpush="git push"
+alias gpt="git push --follow-tags"
 alias gpull="git pull"
 alias gstat="git status"
 alias gc="git checkout"
@@ -55,6 +56,8 @@ alias gmm="git merge master"
 alias gba="git branch -avv"
 alias gprmn="git push -o merge_request.create -o merge_request.target=main -o merge_request.merge_when_pipeline_succeeds -o merge_request.assign=j.lavine"
 alias gprmtr="git push -o merge_request.create -o merge_request.target=master -o merge_request.assign=j.lavine"
+alias gt="git tag -a"
+
 
 alias gconfigedit="git config --global --edit"
 alias gconflist="git config -l"
@@ -65,6 +68,13 @@ alias awscaller="aws sts get-caller-identity"
 alias awsreg="aws configure get region"
 alias awssetreg="aws configure set region"
 alias awssso="aws configure sso"
+
+# TG
+if grep -i Ubuntu /etc/lsb-release &> /dev/null
+then 
+  alias tg="/usr/local/bin/terragrunt"
+fi
+
 
 # TF aliases
 alias tfr="rm -fr .terra*"

@@ -9,6 +9,9 @@ venv() {
     fi
 }
 
+gtag() { "git tag -a $1 -m $2"; }
+
+
 
 # sysadmin
 alias addu="sudo adduser"
